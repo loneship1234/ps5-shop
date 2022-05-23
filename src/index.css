@@ -18,7 +18,7 @@ code {
 .card:hover .pic{
  transform: scale(1.03,1.03);
 }
-transition-2.{
+.transition-2{
   transition: all,2s;
 }
 .bg-gray-850{
