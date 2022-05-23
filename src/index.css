@@ -8,6 +8,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 code {
@@ -19,4 +20,64 @@ code {
 }
 transition-2.{
   transition: all,2s;
+}
+.bg-gray-850{
+  background-color: rgb(33, 33, 33);
+}
+.scale-90{
+  transform: scale(0.9,0.9);
+}
+@font-face {
+  font-family: OpenSansSemiBold;
+  src: url(../font/Open_Sans/OpenSans-SemiBold.ttf);
+}
+@font-face {
+  font-family: OpenSansBold;
+  src: url(../font/Open_Sans/OpenSans-Bold.ttf);
+}
+@font-face {
+  font-family: OpenSans;
+  src: url(../font/Open_Sans/OpenSans-Regular.ttf);
+}
+.font-regular{
+  font-family: OpenSans !important;
+}
+.font-Bold{
+  font-family: OpenSansBold !important;
+}
+.font-semiBold{
+  font-family: OpenSansSemiBold !important;
+}
+.a::after{
+  content: "";
+  display: block;
+  padding-top: -2px;
+  border-bottom: 2px solid #171717;
+  width: 0;
+  transition: all 0.5s;
+}
+a:nth-last-of-type(1):hover:after {
+  width: 30px;
+}
+a:nth-last-of-type(2):hover:after {
+  width: 47px;
+}
+a:nth-last-of-type(3):hover:after {
+  width: 54px;
+}
+a:nth-last-of-type(4):hover:after {
+  width: 37px;
+}
+.animation{
+  animation: mouseWheel 2s linear infinite;
+}
+@keyframes mouseWheel {
+  0%{
+opacity: 0;
+transform: translateY(-1rem);
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0.7rem);
+  }
 }
